@@ -209,11 +209,25 @@ body {
     font-size: 0.9rem;
   }
   
-  @media (max-width: 600px) {
-      #navbar {
-          width: 100%;
-          height: auto;
-          position: fixed;
-          border-right: none;
-      }
+  /*For small screens*/
+.some-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  header nav a {
+    font-size: 14px;
+    padding: 5px;
   }
+
+  .some-container {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .project-thumbnail {
+    width:100%;
+  }
+}
